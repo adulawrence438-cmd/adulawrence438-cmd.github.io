@@ -12,10 +12,11 @@
     <nav>
         <h2 class="logo">Lawrence</h2>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!-- Links now point to separate HTML files instead of section IDs -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -23,41 +24,20 @@
     <section id="home" class="hero">
         <h1>Hello, I'm <span>Lawrence</span></h1>
         <p>Biomedical Engineer | Medical Device Design and Development | Biomedical Instrumentation Enthusiast</p>
-        <a href="#projects" class="btn">View My Work</a>
+        <!-- Button links to the separate projects page -->
+        <a href="projects.html" class="btn">View My Work</a>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I am a Biomedical Engineering graduate with strong passion for medical device design, development and biomedical instrumentation. I am motivated by the goal of improving healthcare through technology creating tools that are reliable, safe and accessible for both patients and clinicians.
-        </p>
-    </section>
-
-    <!-- Project Section -->
-    <section id="project" class="section">
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <h3> Examining the technical challenages biomedical engineering students encounter during their clinical training and the impart on professional development</h3>
-            </div>
-
+    <!-- Quick Navigation (Optional: keeps the page from looking too empty) -->
+    <section class="section">
+        <div class="navigation-links" style="text-align: center;">
+            <p>Learn more <a href="about.html">About Me</a>, view my <a href="projects.html">Latest Projects</a>, or <a href="contact.html">Get in Touch</a>.</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: <strong>adulawrence438@email.com</strong></p>
-        <p>GitHub: <a href="#">github.com/lawrence</a></p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/lawrence</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>©️ 2025 lawrence. All Rights Reserved.</p>
+        <p>©️ 2025 Lawrence. All Rights Reserved.</p>
     </footer>
 
 </body>
