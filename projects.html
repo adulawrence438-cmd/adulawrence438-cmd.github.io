@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BME Research Project | Clinical Training Challenges in Ghana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1a252f);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            background: var(--white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .impact-box {
+            background: #eef7fe;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.6rem; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Examining Technical Challenges of Biomedical Engineering Students During Clinical Training in Ghana</h1>
+        <p>Research Project & Analysis | Department of Biomedical Engineering</p>
+    </header>
+
+    <nav>
+        <a href="#abstract">Abstract</a>
+        <a href="#challenges">Technical Challenges</a>
+        <a href="#impact">Professional Impact</a>
+        <a href="#recommendations">Recommendations</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>
+                Clinical training is a cornerstone of Biomedical Engineering (BME) education in Ghana, bridging the gap between theoretical knowledge and practical hospital application. However, many students face significant technical hurdles during their rotations in Ghanaian healthcare facilities. This project examines these challenges—ranging from equipment obsolescence to inadequate supervision—and evaluates how these obstacles shape the professional development and competency of future engineers.
+            </p>
+        </section>
+
+        <section id="challenges">
+            <h2>Core Technical Challenges</h2>
+            <div class="challenge-grid">
+                <div class="card">
+                    <h3>Equipment Obsolescence</h3>
+                    <p>Exposure to outdated medical devices that do not align with modern curriculum standards, making it difficult to apply contemporary troubleshooting techniques.</p>
+                </div>
+                <div class="card">
+                    <h3>Lack of Spare Parts</h3>
+                    <p>Frequent inability to complete repairs due to disrupted supply chains for specialized electronic components and mechanical parts within Ghana.</p>
+                </div>
+                <div class="card">
+                    <h3>Limited Hands-on Access</h3>
+                    <p>High student-to-equipment ratios in major teaching hospitals like Korle-Bu or Komfo Anokye, leading to "observation-only" learning sessions.</p>
+                </div>
+                <div class="card">
+                    <h3>Infrastructural Gaps</h3>
+                    <p>Unstable power supply and poor tool-kit availability (multimeters, soldering stations, simulators) in clinical engineering departments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact">
+            <h2>Impact on Professional Development</h2>
+            <p>The technical challenges faced during training have a direct correlation with the confidence and skill acquisition of the BME student:</p>
+            <div class="impact-box">
+                <ul>
+                    <li><strong>Skill Gaps:</strong> Students may graduate with strong theoretical knowledge but lack the "bench-side" confidence to repair critical life-support equipment.</li>
+                    <li><strong>Adaptability:</strong> Conversely, the scarcity of resources often fosters "improvised problem-solving," a unique trait of Ghanaian engineers.</li>
+                    <li><strong>Employability:</strong> The mismatch between hospital technology and academic training can lead to a longer onboarding period in the private sector.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Proposed Recommendations</h2>
+            <ol style="margin-left: 20px;">
+                <li><strong>Industry-Academia Partnerships:</strong> Universities should collaborate with private medical distributors to provide students access to modern diagnostic tools.</li>
+                <li><strong>Simulation Labs:</strong> Implementing high-fidelity simulation centers on campus to augment clinical rotations.</li>
+                <li><strong>Standardized Mentorship:</strong> Developing a structured logbook system for hospital engineers to ensure uniform training across various regional hospitals.</li>
+            </ol>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Biomedical Engineering Research Portfolio</p>
+        <p>Accra, Ghana</p>
+    </footer>
+
+</body>
+</html>
