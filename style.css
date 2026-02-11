@@ -499,4 +499,122 @@ body {
         text-align: left;
     }
 }
+/* --- Projects Page Styles --- */
+
+.projects-container {
+    padding: 120px 10% 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    margin-bottom: 3rem;
+    text-align: left !important;
+    padding: 2.5rem !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.project-icon {
+    width: 40px;
+    height: 40px;
+    color: #38bdf8;
+}
+
+.project-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.project-tag {
+    font-size: 0.8rem;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.skills-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skills-chips span {
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    color: #38bdf8;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Research Specific Layout */
+.research-brief {
+    font-style: italic;
+    color: #e2e8f0;
+    border-left: 3px solid #38bdf8;
+    padding-left: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin: 2rem 0;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-num {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #38bdf8;
+}
+
+.stat-desc {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.abstract-section h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.abstract-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
