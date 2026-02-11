@@ -387,3 +387,116 @@ body {
         left: -36px;
     }
 }
+/* --- Experience Page Styles --- */
+
+.experience-container {
+    padding: 120px 10% 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    margin-bottom: 2.5rem;
+    text-align: left !important;
+    padding: 2.5rem !important;
+    border-left: 4px solid #38bdf8 !important; /* Blue accent line */
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.exp-header h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.company {
+    color: #38bdf8;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.exp-meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.badge {
+    background: #10b981; /* Green for current role */
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.date, .location {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.exp-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.exp-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.exp-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* Equipment Tags */
+.equipment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    background: rgba(56, 189, 248, 0.2);
+    border-color: #38bdf8;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .exp-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .exp-meta {
+        text-align: left;
+    }
+}
+
