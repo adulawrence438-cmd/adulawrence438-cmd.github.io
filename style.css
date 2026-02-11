@@ -499,3 +499,72 @@ footer {
         padding: 1.5rem;
     }
 }
+/* --- Contact Page Styles --- */
+.contact-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-header {
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: var(--light-gray);
+    padding: 2.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-card p {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-card .btn {
+    width: 100%;
+    margin-left: 0; /* Resetting the margin from the hero buttons */
+}
+
+/* Fix for secondary button consistency */
+.contact-card .btn.secondary {
+    border: 1px solid #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
