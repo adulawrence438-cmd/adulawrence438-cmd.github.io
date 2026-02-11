@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Lawrence Adu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="3d-models.html">3D Models</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <h2 class="page-title">Technical Projects & Research</h2>
+
+        <!-- Project 1: Microscopic Power Board -->
+        <section class="project-card glass-card">
+            <div class="project-content">
+                <div class="project-header">
+                    <i data-lucide="cpu" class="project-icon"></i>
+                    <div>
+                        <h3>Microscopic Power Board Design</h3>
+                        <span class="project-tag">Hardware Engineering</span>
+                    </div>
+                </div>
+                <p>
+                    Developed a miniaturized power distribution board designed for high-precision electronic applications. 
+                    The project involved intricate circuit design, component selection for space-constrained environments, 
+                    and precision soldering to ensure stable power delivery to sensitive microscopic sensors.
+                </p>
+                <div class="skills-chips">
+                    <span>PCB Design</span>
+                    <span>Power Electronics</span>
+                    <span>Precision Soldering</span>
+                    <span>Circuit Troubleshooting</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: Research Project -->
+        <section class="project-card glass-card research-card">
+            <div class="project-content">
+                <div class="project-header">
+                    <i data-lucide="microscope" class="project-icon"></i>
+                    <div>
+                        <h3>BME Clinical Training Challenges in Ghana</h3>
+                        <span class="project-tag">Academic Research</span>
+                    </div>
+                </div>
+                
+                <p class="research-brief">
+                    <strong>Research Objective:</strong> To examine technical challenges encountered by Biomedical Engineering students during clinical training and their impact on professional development in Ghana.
+                </p>
+
+                <div class="research-grid">
+                    <div class="stat-box">
+                        <span class="stat-num">120</span>
+                        <span class="stat-desc">Students Surveyed</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">65%</span>
+                        <span class="stat-desc">Lack Hands-on Practice</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">62%</span>
+                        <span class="stat-desc">Device Operation Struggles</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">60%</span>
+                        <span class="stat-desc">Reduced Confidence</span>
+                    </div>
+                </div>
+
+                <div class="abstract-section">
+                    <h4>Abstract Highlights</h4>
+                    <p>
+                        This descriptive cross-sectional study across four universities revealed significant gaps in BME education. 
+                        Key findings indicate that limited access to functional equipment (55%) and inadequate supervision (58%) 
+                        result in competence gaps, leaving 54% of students feeling unprepared for real-world practice. 
+                        The research advocates for structured mentorship and university-hospital partnerships to ensure 
+                        Ghana produces engineers ready for the healthcare delivery frontline.
+                    </p>
+                </div>
+
+                <div class="skills-chips">
+                    <span>Data Analysis</span>
+                    <span>Cross-Sectional Survey</span>
+                    <span>Clinical Engineering</span>
+                    <span>Healthcare Policy</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
