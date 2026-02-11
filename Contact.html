@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Lawrence Adu</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Icon Library for professional symbols -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (Simple, clean icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
+    <div class="background-animation"></div>
+
     <header>
-        <nav class="container">
-            <div class="logo">LAWRENCE ADU</div>
-            <ul class="nav-links">
+        <nav class="glass-nav">
+            <div class="logo">PORTFOLIO</div>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="education.html">education</a></li>
-                <li><a href="experience.html">experience</a></li>i>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="3d-models.html">3D Models</a></li>
                 <li><a href="cv.html">CV</a></li>
@@ -27,43 +29,39 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="contact-section">
-            <div class="contact-header">
-                <h1>Get in Touch</h1>
-                <p>I am currently looking for opportunities to contribute to innovative medical technology teams. If you'd like to discuss a project or opportunity, feel free to reach out!</p>
-            </div>
+    <main class="contact-container">
+        <section class="glass-card contact-card">
+            <h1>Get in touch</h1>
+            <p class="contact-intro">
+                I am currently looking for opportunities to contribute to innovative <strong>medical technology</strong> teams. 
+                If you'd like to discuss a project or opportunity, feel free to reach out!
+            </p>
 
-            <div class="contact-grid">
-                <!-- Email Card -->
-                <div class="contact-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>adulawrence438@gmail.com</p>
-                    <a href="mailto:adulawrence438@gmail.com" class="btn primary">Send Email</a>
-                </div>
+            <div class="contact-methods">
+                <a href="mailto:adulawrence438@gmail.com" class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <span>adulawrence438@gmail.com</span>
+                </a>
 
-                <!-- LinkedIn Card -->
-                <div class="contact-card">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>Professional Profile</p>
-                    <a href="http://linkedin.com/in/lawrence-adu-437243317" target="_blank" class="btn secondary">View Profile</a>
-                </div>
+                <a href="http://linkedin.com/in/lawrence-adu-437243317" target="_blank" class="contact-item">
+                    <i data-lucide="linkedin"></i>
+                    <span>Lawrence Adu</span>
+                </a>
 
-                <!-- Phone Card -->
-                <div class="contact-card">
-                    <i class="fa-solid fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p>0541992710</p>
-                    <a href="tel:0541992710" class="btn secondary">Call Now</a>
-                </div>
+                <a href="tel:0541992710" class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <span>0541992710</span>
+                </a>
             </div>
         </section>
     </main>
 
+    <script>
+      // Initialize icons
+      lucide.createIcons();
+    </script>
     <footer>
-        <p>&copy; 2024 Lawrence Adu. Built with GitHub Pages.</p>
+        <p>&copy; 2025 Lawrence Adu. Built with GitHub Pages.</p>
     </footer>
 
 </body>
