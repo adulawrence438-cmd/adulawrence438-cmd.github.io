@@ -139,3 +139,70 @@ body {
 .secondary:hover {
     background: rgba(255,255,255,0.1);
 }
+/* --- Contact Page Specific Styles --- */
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-card {
+    max-width: 600px !important; /* Slightly narrower than home */
+    width: 100%;
+}
+
+.contact-intro {
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: #e2e8f0;
+}
+
+.contact-intro strong {
+    color: #38bdf8; /* Highlight MedTech in a nice blue */
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item i {
+    color: #38bdf8;
+    width: 20px;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(10px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-item span {
+    font-size: 1.1rem;
+    word-break: break-all; /* Ensures long emails don't break on mobile */
+}
+
+/* Mobile Tweak for Nav */
+@media (max-width: 768px) {
+    .glass-nav ul {
+        display: none; /* We'll need to add a mobile menu later */
+    }
+}
