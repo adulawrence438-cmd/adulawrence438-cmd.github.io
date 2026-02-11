@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lawrence Adu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">LAWRENCE ADU</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="3d-models.html">3D Models</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>I am always open to discussing new projects, medical device innovations, or professional opportunities.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Details -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <a href="mailto:adulawrence438@gmail.com">adulawrence438@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <a href="tel:0541992710">0541992710</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>LinkedIn</h3>
+                        <a href="http://linkedin.com/in/lawrence-adu-437243317" target="_blank">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <!-- Replace 'your-form-id' with the ID you get from Formspree.io -->
+                    <form action="https://formspree.io/f/adulawrence438@gmail.com" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lawrence Adu. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
