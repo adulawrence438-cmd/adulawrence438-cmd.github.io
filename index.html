@@ -1,312 +1,46 @@
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add a font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navigation -->
     <header>
-        <div class="logo">#1Law</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#cad">CAD Design</a>
-            <a href="#contact">Contact</a>
+        <nav class="container">
+            <div class="logo">YOUR NAME</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="3d-models.html">3D Models</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Hi I'm Adu Lawrence Amoah a Biomedical Engineer</h1>
-        <p>Medical Device Design & Development | Biomedical Instrumentation Enthusiast</p>
-    </section>
-
-    <section id="about">
-        <div class="section-title">
-            <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-            <p><strong>My Background:</strong> I am a Biomedical Engineering graduate with a strong passion for medical device design, development, and biomedical instrumentation. I am motivated by the goal of improving healthcare through technology — creating tools that are reliable, safe, and accessible for both patients and clinicians.</p>
-            <br>
-            <p>My interests focus on how engineering principles can be applied to solve real medical problems. I enjoy learning about how devices are designed, tested, and translated from ideas into working products used in hospitals and laboratories.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <h3>Focus Areas</h3>
-                    <ul class="experience-list">
-                        <li>Medical device innovation and product development</li>
-                        <li>Biomedical instrumentation and sensors</li>
-                        <li>Device safety, calibration, and performance testing</li>
-                        <li>Technology-supported diagnosis and patient care</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>My Goal</h3>
-                    <p>I am eager to keep developing my technical skills, gaining practical experience, and contributing to projects that improve health outcomes. My long-term goal is to be part of teams that design and develop medical technologies that truly make a difference.</p>
+    <!-- Hero Section -->
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <h1>Creative Developer & 3D Artist</h1>
+                <p>Welcome to my digital space. I build interactive experiences and design 3D worlds.</p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn primary">View Work</a>
+                    <a href="contact.html" class="btn secondary">Get In Touch</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- NEW EDUCATION SECTION -->
-    <section id="education" style="background-color: #f8fafc;">
-        <div class="section-title">
-            <h2>Educational Background</h2>
-        </div>
-        <div class="grid">
-            <!-- University -->
-            <div class="card" style="border-top: 5px solid var(--primary);">
-                <h3>University Education</h3>
-                <p><strong>Biomedical Engineering</strong></p>
-                <p style="color: var(--primary); font-weight: bold;">[Koforidua Technical University]</p>
-                <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 10px;">[2023-2025]</p>
-                <ul class="experience-list">
-                    <li>Comprehensive study of engineering principles applied to medicine and biology.</li>
-                    <li>Hands-on training in medical electronics, biomechanics, biomedical Instrumentation and clinical engineering.</li>
-                    <li>Developed core skills in CAD design, circuit analysis, and medical device maintenance.</li>
-                </ul>
-            </div>
-
-            <!-- High School -->
-            <div class="card" style="border-top: 5px solid var(--accent);">
-                <h3>High School Education</h3>
-                <p><strong>General Science</strong></p>
-                <p style="color: var(--primary); font-weight: bold;">[Adu Gyamfi Senior High School]</p>
-                <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 10px;">[2016-2019]</p>
-                <ul class="experience-list">
-                    <li>Major Subjects: Physics, Chemistry, Biology, and Elective Mathematics.</li>
-                    <li>Built a solid foundation in analytical thinking and the scientific method.</li>
-                    <li>Strong performance in laboratory-based practicals and theoretical science.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" style="background-color: #f1f5f9;">
-        <div class="section-title">
-            <h2>Professional Experience</h2>
-        </div>
-        <div class="grid">
-            <!-- CURRENT ROLE -->
-            <div class="card" style="border-top: 5px solid var(--accent);">
-                <h3>Current Role</h3>
-                <p><strong>National Service Person</strong></p>
-                <p style="color: var(--primary); font-weight: bold;">Accra Psychiatric Hospital</p>
-                <ul class="experience-list" style="margin-top: 15px;">
-                    <li>Contributing to the maintenance and management of medical equipment within a specialized clinical environment.</li>
-                    <li>Collaborating with healthcare professionals to ensure the reliability of diagnostic and therapeutic tools.</li>
-                    <li>Participating in routine inspections and safety protocols to support patient care standards.</li>
-                </ul>
-            </div>
-
-            <!-- INTERNSHIP ROLE -->
-            <div class="card" style="border-top: 5px solid var(--primary);">
-                <h3>Internship</h3>
-                <p><strong>Biomedical Engineering Intern</strong></p>
-                <p style="color: var(--primary); font-weight: bold;">Ashanti Mampong Government Hospital</p>
-                <ul class="experience-list" style="margin-top: 15px;">
-                    <li>Assisted in the repair and preventive maintenance of essential hospital equipment across various departments.</li>
-                    <li>Gained practical exposure to hospital-grade sterilization, diagnostic, and life-support machines.</li>
-                    <li>Worked under senior engineers to troubleshoot hardware failures in a fast-paced clinical setting.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Technical Maintenance</h3>
-                <ul class="experience-list">
-                    <li>Assisted with troubleshooting, testing, and maintenance of biomedical equipment.</li>
-                    <li>Hands-on experience with:
-                        <div class="tag-container">
-                            <span class="tag">Patient Monitors</span>
-                            <span class="tag">Suction Machines</span>
-                            <span class="tag">Infusion Pumps</span>
-                            <span class="tag">Laboratory Analyzers</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Safety & Quality</h3>
-                <ul class="experience-list">
-                    <li>Participated in calibration and performance checks to ensure device safety and accuracy.</li>
-                    <li>Supported preventive maintenance schedules in clinical environments.</li>
-                    <li>Followed standard operating procedures (SOPs) and prepared technical reports.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-title">
-            <h2>Projects & Research</h2>
-        </div>
-
-        <!-- TECHNICAL PROJECT: ELECTRONIC MICROSCOPE POWER BOARD -->
-        <div class="project-detail" style="border-bottom: 4px solid var(--accent);">
-            <h3>Design & Construction of an Electronic Microscope Power Board</h3>
-            <p><strong>Overview:</strong> Developed a customized electronic power board designed to provide stable and regulated power to a microscope's lighting and electronic components.</p>
-            
-            <div class="grid" style="margin-top: 20px;">
-                <div class="card" style="border-top: 3px solid var(--primary);">
-                    <h4>Technical Highlights</h4>
-                    <ul class="experience-list">
-                        <li>Designed and soldered circuit components for voltage regulation and surge protection.</li>
-                        <li>Improved the reliability of light intensity control for clearer imaging.</li>
-                        <li>Successfully integrated the board into an existing microscope framework.</li>
-                    </ul>
-                </div>
-                <div class="card" style="border-top: 3px solid var(--primary);">
-                    <h4>Skills Applied</h4>
-                    <div class="tag-container">
-                        <span class="tag">Circuit Design</span>
-                        <span class="tag">Soldering</span>
-                        <span class="tag">Power Electronics</span>
-                        <span class="tag">Prototyping</span>
-                        <span class="tag">Instrumentation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- RESEARCH PROJECT -->
-        <div class="project-detail">
-            <h3>Examining the Technical Challenges Biomedical Engineering Students Encounter During Clinical Training and Their Impact on Professional Development in Ghana</h3>
-            
-            <p><strong>Background:</strong> Clinical training is a cornerstone of Biomedical Engineering (BME) education in Ghana. This research investigates the gap between theoretical knowledge and professional practice caused by resource constraints.</p>
-            
-            <div class="grid" style="margin-top: 20px;">
-                <div class="card" style="border-top: 3px solid var(--accent);">
-                    <h4>Research Objectives</h4>
-                    <ul class="experience-list">
-                        <li>Assess availability and functionality of medical equipment during clinical training.</li>
-                        <li>Identify specific technical challenges encountered in healthcare settings.</li>
-                        <li>Analyse impact on skill acquisition and professional readiness.</li>
-                    </ul>
-                </div>
-                <div class="card" style="border-top: 3px solid var(--accent);">
-                    <h4>Significance</h4>
-                    <p>Provides evidence-based recommendations for the Ministry of Health to improve resource allocation and university-hospital partnerships in Ghana.</p>
-                </div>
-            </div>
-
-            <div class="tag-container">
-                <span class="tag">Academic Research</span>
-                <span class="tag">Clinical Training</span>
-                <span class="tag">Healthcare Technology</span>
-                <span class="tag">Ghana Health System</span>
-            </div>
-        </div>
-    </section>
-    <a href="#cad">CAD Design</a>
-<section id="cad">
-    <div class="section-title">
-        <h2>CAD Design & Reverse Engineering</h2>
-    </div>
-
-    <!-- CAD PROJECT 1: WALL-MOUNTED CABLE / PROBE HOLDER -->
-    <div class="project-detail" style="border-bottom: 4px solid var(--primary);">
-
-        <h3>Wall-Mounted Cable / Probe Holder</h3>
-
-        <p>
-            <strong>Overview:</strong> Designed and modeled a wall-mounted cable and probe holder
-            using SolidWorks to organize and support hanging cables in a general engineering
-            environment. The design focuses on load-bearing performance, durability, and
-            safe cable handling.
-        </p>
-
-        <div class="grid" style="margin-top: 20px;">
-            <div class="card" style="border-top: 3px solid var(--primary);">
-                <h4>Design Features</h4>
-                <ul class="experience-list">
-                    <li>40 × 60 × 5 mm backplate with countersunk mounting holes for flush installation.</li>
-                    <li>Reinforced L-shaped hook with 40 mm projection and 15 mm retaining lip.</li>
-                    <li>5 mm fillet at the hook–backplate junction to reduce stress concentration.</li>
-                    <li>Rounded edges to prevent cable damage and snagging.</li>
-                </ul>
-            </div>
-
-            <div class="card" style="border-top: 3px solid var(--primary);">
-                <h4>Material & Manufacturing</h4>
-                <ul class="experience-list">
-                    <li>Designed for PETG 3D printing due to its strength and impact resistance.</li>
-                    <li>Optimized geometry for repeated loading and long-term use.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="tag-container">
-            <span class="tag">SolidWorks</span>
-            <span class="tag">CAD Design</span>
-            <span class="tag">Reverse Engineering</span>
-            <span class="tag">Load-Bearing Design</span>
-            <span class="tag">3D Printing (PETG)</span>
-        </div>
-
-    </div>
-
-    <!-- CAD PROJECT 2: CENTRIFUGE TUBE ADAPTER -->
-    <div class="project-detail">
-
-        <h3>Centrifuge Tube Adapter</h3>
-
-        <p>
-            <strong>Overview:</strong> Designed and modeled a centrifuge tube adapter in SolidWorks
-            to allow secure placement of smaller test tubes inside a larger centrifuge bucket.
-            The design emphasizes precise clearance fitting to ensure stability during operation
-            while allowing easy insertion and removal.
-        </p>
-
-        <div class="grid" style="margin-top: 20px;">
-            <div class="card" style="border-top: 3px solid var(--primary);">
-                <h4>Design Features</h4>
-                <ul class="experience-list">
-                    <li>Outer cylindrical body sized for accurate bucket fitting.</li>
-                    <li>Top retaining lip to prevent the adapter from slipping into the bucket.</li>
-                    <li>Internal bore sized to hold standard 5 mL centrifuge tubes.</li>
-                    <li>Rounded internal base to support the tube and reduce stress.</li>
-                </ul>
-            </div>
-
-            <div class="card" style="border-top: 3px solid var(--primary);">
-                <h4>Engineering Considerations</h4>
-                <ul class="experience-list">
-                    <li>Clearance fit applied to balance stability and ease of use.</li>
-                    <li>Rounded geometry to reduce vibration and stress concentration.</li>
-                    <li>Designed for PETG 3D printing to ensure durability and chemical resistance.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="tag-container">
-            <span class="tag">SolidWorks</span>
-            <span class="tag">CAD Design</span>
-            <span class="tag">Reverse Engineering</span>
-            <span class="tag">Mechanical Fit Design</span>
-            <span class="tag">3D Printing (PETG)</span>
-        </div>
-
-    </div>
-</section>
-      
-          
-    </section>
-
-    <section id="contact">
-        <div class="section-title">
-            <h2>Get In Touch</h2>
-        </div>
-        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-            <p>I am currently looking for opportunities to contribute to innovative medical technology teams. If you'd like to discuss a project or opportunity, feel free to reach out!</p>
-            <br>
-            <p><strong>Email:</strong> adulawrence438@gmail.com</p>
-            <p><strong>LinkedIn:</strong> http://linkedin.com/in/lawrence-adu-437243317</p>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 #1Law Portfolio. All Rights Reserved.</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; color: #94a3b8;">Biomedical Engineering | Design | Development | NSS Accra Psychiatric Hospital</p>
+        <p>&copy; 2024 Your Name. Built with GitHub Pages.</p>
     </footer>
 
 </body>
