@@ -617,4 +617,50 @@ body {
         align-items: flex-start;
     }
 }
+/* --- 3D Gallery Layout --- */
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.showcase-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-img {
+    height: 300px;
+    object-fit: contain;
+    background: rgba(0,0,0,0.2);
+}
+
+.sub-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.sub-gallery img {
+    height: 120px;
+    object-fit: contain;
+    background: rgba(0,0,0,0.2);
+}
+
+.software-tag {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .showcase-content {
+        grid-template-columns: 1fr;
+    }
+}
 
