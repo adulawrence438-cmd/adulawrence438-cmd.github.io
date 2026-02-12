@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling | Lawrence Adu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
+    <div class="background-animation"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">PORTFOLIO</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="3d-models.html" class="active">3D Models</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="models-container">
+        <h2 class="page-title">Biomedical CAD & Engineering Design</h2>
+
+        <!-- Project 1: Suction Machine -->
+        <section class="glass-card showcase-card">
+            <div class="showcase-header">
+                <div class="header-text">
+                    <span class="project-category">Assembly Design</span>
+                    <h3>Mobile Medical Suction Machine</h3>
+                </div>
+                <div class="software-tag">SolidWorks Assembly</div>
+            </div>
+            <div class="showcase-content">
+                <div class="showcase-text">
+                    <p>Fully modeled medical suction unit replicating a clinically functional hospital device. Designed for high stability, portability, and ease of sterilization.</p>
+                    <ul class="process-list">
+                        <li><strong>Assembly:</strong> Includes caster wheels, 2–3L collection jars, and vacuum pump cabinet.</li>
+                        <li><strong>Safety:</strong> Incorporated overflow protection and vibration isolation.</li>
+                        <li><strong>Ergonomics:</strong> Features an integrated push-handle and functional control layout.</li>
+                        <li><strong>Engineering:</strong> Applied realistic materials (Powder-coated steel/Polycarbonate).</li>
+                    </ul>
+                </div>
+                <div class="showcase-gallery">
+                    <img src="images/suction-render.png" alt="Suction Machine Render" class="gallery-img main-img">
+                    <div class="sub-gallery">
+                        <img src="images/suction-exploded.png" alt="Exploded View" class="gallery-img">
+                        <img src="images/suction-drawing.png" alt="BOM Drawing" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 2: Probe Holder -->
+        <section class="glass-card showcase-card">
+            <div class="showcase-header">
+                <div class="header-text">
+                    <span class="project-category">Additive Manufacturing</span>
+                    <h3>Wall-Mounted Probe Holder</h3>
+                </div>
+                <div class="software-tag">PETG Optimization</div>
+            </div>
+            <div class="showcase-content">
+                <div class="showcase-text">
+                    <p>Utility design to protect sensitive lab probe cables. Optimized for 3D printing in PETG for chemical resistance and durability.</p>
+                    <ul class="process-list">
+                        <li><strong>Stress Reduction:</strong> 5mm radius fillets at high-stress base junctions.</li>
+                        <li><strong>Mounting:</strong> Countersunk holes for flush screw head installation.</li>
+                        <li><strong>Cable Safety:</strong> Rounded edges (1mm radius) to prevent snagging or damage.</li>
+                    </ul>
+                </div>
+                <div class="showcase-gallery">
+                    <img src="images/probe-main.png" alt="Probe Holder Design" class="gallery-img main-img">
+                    <div class="sub-gallery">
+                        <img src="images/probe-iso.png" alt="Isometric View" class="gallery-img">
+                        <img src="images/probe-drawing.png" alt="Technical Drawing" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project 3: Centrifuge Adapter -->
+        <section class="glass-card showcase-card">
+            <div class="showcase-header">
+                <div class="header-text">
+                    <span class="project-category">Laboratory Innovation</span>
+                    <h3>Centrifuge Tube Adapter</h3>
+                </div>
+                <div class="software-tag">Precision Fit</div>
+            </div>
+            <div class="showcase-content">
+                <div class="showcase-text">
+                    <p>Custom adapter designed to stabilize 5mL test tubes within standard large-scale centrifuge buckets.</p>
+                    <ul class="process-list">
+                        <li><strong>Fit:</strong> Calculated clearance fit for easy insertion and zero-wobble rotation.</li>
+                        <li><strong>Design:</strong> 22mm top lip serves as a mechanical stop for depth control.</li>
+                        <li><strong>Validation:</strong> Produce full dimensioned drawings with cross-sectional views.</li>
+                    </ul>
+                </div>
+                <div class="showcase-gallery">
+                    <img src="images/centrifuge-render.png" alt="Adapter Isometrics" class="gallery-img main-img">
+                    <div class="sub-gallery">
+                        <img src="images/centrifuge-drawing.png" alt="Section View Drawing" class="gallery-img">
+                        <img src="images/centrifuge-cad.png" alt="CAD View" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
