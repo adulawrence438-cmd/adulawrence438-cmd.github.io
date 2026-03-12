@@ -757,3 +757,90 @@ video.main-img {
         height: 250px !important;
     }
 }
+/* --- 3D Models Page Fixes --- */
+
+/* 1. Ensure the main container is centered on the screen */
+.models-container {
+    padding: 120px 20px 80px; /* Adjusted padding */
+    max-width: 1200px;        /* Limits how wide the cards get */
+    margin: 0 auto;           /* THE FIX: Centers the container itself */
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centers cards inside the container */
+}
+
+/* 2. Fix the Header and the Cyan Software Tag */
+.showcase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      /* Aligns text and tag on the same line */
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.software-tag {
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: inline-block;    /* THE FIX: Prevents it from stretching like a bar */
+    white-space: nowrap;      /* Keeps it on one line */
+}
+
+/* 3. Fix the Content Grid (Text vs Images) */
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* THE FIX: Gives the text 40% and images 60% space */
+    gap: 40px;
+    align-items: start;
+    width: 100%;
+    text-align: left;         /* Keeps text readable */
+}
+
+/* 4. Improve the card appearance */
+.showcase-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;             /* Fills the 1200px container */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.process-list {
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.process-list li {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* 5. Video & Image Sizing */
+.main-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;      /* THE FIX: Keeps your SolidWorks renders from being cropped */
+    border-radius: 10px;
+}
+
+/* Mobile Fix: Stacks them vertically on small screens */
+@media (max-width: 900px) {
+    .showcase-content {
+        grid-template-columns: 1fr;
+    }
+    .showcase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
