@@ -673,3 +673,87 @@ video.main-img {
     border-radius: 10px;
     background: #000;
 }
+/* --- Centering & Catchy Layout --- */
+.models-container {
+    padding: 120px 5% 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the cards horizontally */
+    gap: 60px; /* Space between projects */
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fff, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.showcase-card {
+    max-width: 1100px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.showcase-card:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    transform: translateY(-5px);
+}
+
+/* --- Catchy Image Effects --- */
+.gallery-img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: zoom-in;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect: Zoom and Blue Glow */
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+    z-index: 10;
+    border-color: #38bdf8;
+}
+
+/* Main image specific size */
+.main-img {
+    height: 380px !important;
+    margin-bottom: 15px;
+}
+
+/* Sub-gallery grid */
+.sub-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.three-col {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.sub-gallery img {
+    height: 150px;
+}
+
+/* Video specific style */
+video.main-img {
+    background: #000;
+}
+
+/* Mobile Tweak */
+@media (max-width: 900px) {
+    .showcase-content {
+        grid-template-columns: 1fr;
+    }
+    .main-img {
+        height: 250px !important;
+    }
+}
