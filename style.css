@@ -616,231 +616,147 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-}
-/* --- 3D Gallery Layout --- */
-.showcase-content {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 30px;
-    align-items: start;
-}
-
-.showcase-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* --- Global Reset & Fonts --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.main-img {
-    height: 300px;
-    object-fit: contain;
-    background: rgba(0,0,0,0.2);
+body {
+    background-color: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-.sub-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.sub-gallery img {
-    height: 120px;
-    object-fit: contain;
-    background: rgba(0,0,0,0.2);
-}
-
-.software-tag {
-    background: #38bdf8;
-    color: #0f172a;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 700;
-}
-
-@media (max-width: 900px) {
-    .showcase-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-.three-col {
-    grid-template-columns: repeat(3, 1fr) !important;
-}
-
-video.main-img {
+/* --- Animated Background (Mesh Gradient) --- */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 10px;
-    background: #000;
-}
-/* --- Centering & Catchy Layout --- */
-.models-container {
-    padding: 120px 5% 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* This centers the cards horizontally */
-    gap: 60px; /* Space between projects */
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(125deg, #0f172a, #1e1b4b, #581c87, #1e3a8a);
+    background-size: 400% 400%;
+    animation: meshGradient 15s ease infinite;
 }
 
-.page-title {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, #fff, #38bdf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@keyframes meshGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.showcase-card {
-    max-width: 1100px;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.4s ease, border-color 0.4s ease;
-}
-
-.showcase-card:hover {
-    border-color: rgba(56, 189, 248, 0.5);
-    transform: translateY(-5px);
-}
-
-/* --- Catchy Image Effects --- */
-.gallery-img {
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: zoom-in;
-    object-fit: cover;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-/* Hover effect: Zoom and Blue Glow */
-.gallery-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
-    z-index: 10;
-    border-color: #38bdf8;
-}
-
-/* Main image specific size */
-.main-img {
-    height: 380px !important;
-    margin-bottom: 15px;
-}
-
-/* Sub-gallery grid */
-.sub-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.three-col {
-    grid-template-columns: repeat(3, 1fr) !important;
-}
-
-.sub-gallery img {
-    height: 150px;
-}
-
-/* Video specific style */
-video.main-img {
-    background: #000;
-}
-
-/* Mobile Tweak */
-@media (max-width: 900px) {
-    .showcase-content {
-        grid-template-columns: 1fr;
-    }
-    .main-img {
-        height: 250px !important;
-    }
-}
-/* --- 3D Models Page Fixes --- */
-
-/* 1. Ensure the main container is centered on the screen */
-.models-container {
-    padding: 120px 20px 80px; /* Adjusted padding */
-    max-width: 1200px;        /* Limits how wide the cards get */
-    margin: 0 auto;           /* THE FIX: Centers the container itself */
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* Centers cards inside the container */
-}
-
-/* 2. Fix the Header and the Cyan Software Tag */
-.showcase-header {
+/* --- Navigation (Glassmorphism) --- */
+.glass-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;      /* Aligns text and tag on the same line */
+    align-items: center;
+    padding: 1.2rem 8%;
+    position: fixed;
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.software-tag {
-    background: #38bdf8;
-    color: #0f172a;
-    padding: 6px 16px;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 800;
-    display: inline-block;    /* THE FIX: Prevents it from stretching like a bar */
-    white-space: nowrap;      /* Keeps it on one line */
-}
-
-/* 3. Fix the Content Grid (Text vs Images) */
-.showcase-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr; /* THE FIX: Gives the text 40% and images 60% space */
-    gap: 40px;
-    align-items: start;
-    width: 100%;
-    text-align: left;         /* Keeps text readable */
-}
-
-/* 4. Improve the card appearance */
-.showcase-card {
+    top: 0;
     background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; color: #38bdf8; }
+.glass-nav ul { display: flex; list-style: none; gap: 20px; }
+.glass-nav a { text-decoration: none; color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; transition: 0.3s; }
+.glass-nav a:hover, .glass-nav a.active { color: #38bdf8; }
+
+/* --- THE CENTERING WRAPPER (This fixes your issue) --- */
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers everything horizontally */
+    padding-top: 120px;      /* Prevents nav overlap */
+    padding-bottom: 60px;
+}
+
+/* --- Reusable Glass Card --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 2.5rem;
-    width: 100%;             /* Fills the 1200px container */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-.process-list {
-    margin-top: 20px;
-    padding-left: 20px;
-    list-style-type: disc;
+/* --- 3D Models Showcase Layout --- */
+.models-container {
+    width: 90%;
+    max-width: 1100px; /* Limits the card width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.process-list li {
-    margin-bottom: 10px;
-    color: #cbd5e1;
-    line-height: 1.6;
-}
-
-/* 5. Video & Image Sizing */
-.main-img {
+.showcase-card {
     width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;      /* THE FIX: Keeps your SolidWorks renders from being cropped */
-    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
-/* Mobile Fix: Stacks them vertically on small screens */
+.showcase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+}
+
+.project-category { color: #38bdf8; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+.software-tag { background: #38bdf8; color: #0f172a; padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; }
+
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr; /* Text on left, Gallery on right */
+    gap: 35px;
+}
+
+.process-list { list-style: disc; margin: 20px 0 0 20px; color: #cbd5e1; font-size: 0.95rem; }
+.process-list li { margin-bottom: 8px; }
+
+/* --- Gallery & Hover Effects --- */
+.gallery-img { 
+    width: 100%; 
+    border-radius: 12px; 
+    background: rgba(0,0,0,0.2); 
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.gallery-img:hover { 
+    transform: scale(1.03); 
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    border-color: #38bdf8;
+}
+
+.main-img { max-height: 380px; object-fit: contain; width: 100%; }
+.sub-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.three-col { grid-template-columns: 1fr 1fr 1fr !important; }
+
+/* --- Other Pages (Hero, Timeline, Contact) --- */
+.hero { height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.page-title { font-size: 2.5rem; margin-bottom: 30px; text-align: center; }
+
+.btn { padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: 0.3s; margin-top: 20px;}
+.primary { background: #fff; color: #000; }
+.secondary { border: 1px solid rgba(255,255,255,0.3); color: #fff; margin-left: 10px;}
+
+/* Mobile Responsiveness */
 @media (max-width: 900px) {
-    .showcase-content {
-        grid-template-columns: 1fr;
-    }
-    .showcase-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+    .showcase-content { grid-template-columns: 1fr; }
+    .glass-nav { padding: 1rem 5%; }
+    .glass-nav ul { display: none; } /* Add hamburger later if needed */
 }
