@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Lawrence Adu Amoah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
 
+    <div class="background-animation"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">LAWRENCE ADU</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="3d-models.html">3D Models</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <main class="cv-container">
+            
+            <!-- CV Header / Action Bar -->
+            <div class="cv-action-card glass-card">
+                <div class="cv-intro">
+                    <h1>Adu Lawrence Amoah</h1>
+                    <p>Biomedical Engineer | Clinical Technology Specialist</p>
+                </div>
+                <!-- This button links to your actual PDF file -->
+                <a href="Adu_Lawrence_Amoah_CV.pdf" target="_blank" class="download-btn">
+                    <i data-lucide="download"></i> Download Full CV (PDF)
+                </a>
+            </div>
+
+            <div class="cv-grid">
+                <!-- Left Column: Experience & Education -->
+                <div class="cv-main-col">
+                    <section class="glass-card cv-section">
+                        <h3><i data-lucide="briefcase"></i> Professional Experience</h3>
+                        
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h4>Greater Accra Psychiatric Hospital</h4>
+                                <span>Nov 2025 – Present</span>
+                            </div>
+                            <p class="role">Clinical Engineering - National Service (NSP)</p>
+                            <ul class="cv-bullets">
+                                <li>Executed corrective and preventive maintenance on medical equipment including centrifuges, suction machines, oxygen concentrators, and patient monitors.</li>
+                                <li>Collaborated on software installation of Mindray BS-240 chemistry analyzers.</li>
+                                <li>Developed comprehensive inventory systems and preventive maintenance schedules.</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h4>Ashanti Mampong Government Hospital</h4>
+                                <span>Sept 2023 – Nov 2024</span>
+                            </div>
+                            <p class="role">Biomedical Engineering Intern</p>
+                            <ul class="cv-bullets">
+                                <li>Performed maintenance on 30+ medical devices, reducing downtime by 25%.</li>
+                                <li>Assisted in the installation of electrosurgical units and fluoroscopy systems.</li>
+                                <li>Supported the setup of a medical oxygen plant and distilled water plant.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="glass-card cv-section">
+                        <h3><i data-lucide="graduation-cap"></i> Education</h3>
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <h4>Koforidua Technical University</h4>
+                                <span>2023 – 2025</span>
+                            </div>
+                            <p class="role">HND in Biomedical Engineering</p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Skills & Certifications -->
+                <div class="cv-side-col">
+                    <section class="glass-card cv-section">
+                        <h3><i data-lucide="award"></i> Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Web Development (HTML/CSS) - Alison</li>
+                            <li>Introduction to Python - DataCamp</li>
+                            <li>Embedded Systems - Alison</li>
+                            <li>Robotics - Alison</li>
+                            <li>Basics of Electrical Technology - Alison</li>
+                        </ul>
+                    </section>
+
+                    <section class="glass-card cv-section">
+                        <h3><i data-lucide="wrench"></i> Key Skills</h3>
+                        <div class="skill-tags">
+                            <span>SolidWorks</span>
+                            <span>Preventive Maintenance</span>
+                            <span>Troubleshooting</span>
+                            <span>MATLAB</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
