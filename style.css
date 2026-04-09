@@ -791,3 +791,77 @@ body {
     }
     .glass-nav ul { display: none; }
 }
+/* --- CV Page Specific Styles --- */
+.cv-container {
+    width: 95%;
+    max-width: 1100px;
+}
+
+.cv-action-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 2rem !important;
+}
+
+.cv-intro h1 { font-size: 2rem; color: #38bdf8; }
+.cv-intro p { color: #94a3b8; }
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.download-btn:hover { background: #fff; transform: translateY(-2px); }
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.cv-section {
+    margin-bottom: 30px;
+    padding: 1.5rem !important;
+    text-align: left;
+}
+
+.cv-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.cv-item { margin-bottom: 25px; }
+.cv-item-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.cv-item-header h4 { color: #fff; }
+.cv-item-header span { color: #38bdf8; font-size: 0.85rem; font-weight: 700; }
+.role { font-size: 0.9rem; color: #cbd5e1; font-style: italic; margin-bottom: 10px; }
+
+.cv-bullets { padding-left: 20px; list-style: disc; color: #94a3b8; font-size: 0.9rem; }
+.cv-bullets li { margin-bottom: 8px; }
+
+.cert-list { list-style: none; color: #cbd5e1; font-size: 0.9rem; }
+.cert-list li { margin-bottom: 12px; border-left: 2px solid #38bdf8; padding-left: 10px; }
+
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tags span { background: rgba(56, 189, 248, 0.1); border: 1px solid #38bdf8; color: #38bdf8; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
+
+@media (max-width: 850px) {
+    .cv-grid { grid-template-columns: 1fr; }
+    .cv-action-card { flex-direction: column; text-align: center; gap: 20px; }
+}
