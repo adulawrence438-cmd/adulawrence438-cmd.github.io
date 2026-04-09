@@ -865,3 +865,14 @@ body {
     .cv-grid { grid-template-columns: 1fr; }
     .cv-action-card { flex-direction: column; text-align: center; gap: 20px; }
 }
+        .btn i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.research-card .btn.primary {
+    background: #38bdf8; /* Medical blue to make it stand out */
+    color: #0f172a;
+    border: none;
+}
