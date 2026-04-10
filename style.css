@@ -876,3 +876,93 @@ body {
     color: #0f172a;
     border: none;
 }
+/* --- Global Styles --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background-color: #0f172a; color: #fff; line-height: 1.6; }
+
+/* --- Background --- */
+.background-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(125deg, #0f172a, #1e1b4b, #581c87, #1e3a8a); background-size: 400% 400%; animation: meshGradient 15s ease infinite; }
+@keyframes meshGradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+/* --- Navigation --- */
+.glass-nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 8%; position: fixed; width: 100%; top: 0; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); z-index: 1000; }
+.logo { color: #38bdf8; font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; }
+.glass-nav ul { display: flex; list-style: none; gap: 20px; }
+.glass-nav a { text-decoration: none; color: #cbd5e1; font-size: 0.85rem; transition: 0.3s; }
+.glass-nav a.active, .glass-nav a:hover { color: #38bdf8; }
+
+/* --- THE CENTERING SYSTEM --- */
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    padding: 120px 20px 80px 20px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-main-title { font-size: 2.8rem; margin-bottom: 10px; background: linear-gradient(to right, #fff, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* --- THE PROJECT CARD --- */
+.project-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+
+.project-card:hover { border-color: rgba(56, 189, 248, 0.5); transform: translateY(-3px); }
+
+.card-header { text-align: center; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px; }
+.category-tag { color: #38bdf8; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
+.software-tag { background: #38bdf8; color: #0f172a; padding: 4px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; display: inline-block; margin-top: 8px; }
+
+/* --- SIDE-BY-SIDE LAYOUT --- */
+.card-body {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.info-column { flex: 1.3; text-align: left; }
+.info-column h4 { color: #38bdf8; margin-bottom: 10px; }
+.bullet-list { margin: 15px 0; padding-left: 20px; color: #cbd5e1; font-size: 0.95rem; }
+.bullet-list li { margin-bottom: 8px; }
+
+/* --- MEDIA GALLERY (Right Side) --- */
+.media-column { flex: 1; max-width: 420px; }
+
+.main-media {
+    width: 100%;
+    border-radius: 10px;
+    background: #000;
+    margin-bottom: 12px;
+    max-height: 240px; /* Catchy smaller height */
+    object-fit: contain;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.4s;
+}
+
+.main-media:hover { transform: scale(1.03); box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); }
+
+.grid-gallery { display: flex; gap: 8px; }
+.grid-gallery img { flex: 1; height: 75px; border-radius: 6px; object-fit: cover; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+.grid-gallery img:hover { transform: scale(1.1); border-color: #38bdf8; z-index: 5; }
+.three-col img { height: 60px; }
+
+/* Mobile Adjustments */
+@media (max-width: 850px) {
+    .card-body { flex-direction: column; }
+    .media-column { max-width: 100%; }
+    .glass-nav ul { display: none; }
+}
